@@ -110,6 +110,7 @@ p, a {
 .sectionText {
     margin: 1rem 0;
     font-family: "Maitree-bold";
+    padding-right: 30vw;
 }
 .image {
     box-shadow: 11px 11px #da6b3d, -11px -11px #da6b3d;
@@ -125,7 +126,7 @@ p, a {
     .smallImage {
         width: auto;
     }
-    .text {
+    .text, .sectionText {
         padding-right: 0;
     }
 }
@@ -137,4 +138,34 @@ p, a {
 /*Step Sections*/
 .stepSection {
     padding: 1rem 0;
+}
+
+/*Footer styles*/
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 0 1.5rem;
+    border-top: solid #d1bd51;
+}
+.footerText {
+    font-weight: bold;
+}
+@media screen and (max-width: 1330px) {
+    .footerText {
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width: 850px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .footerBuffer {
+        display: none;
+    }
+    .footerText {
+        font-size: 1rem;
+    }
 }

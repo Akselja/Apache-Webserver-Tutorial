@@ -28,9 +28,11 @@
         <section class="stepSection" id="step1">
             <h2>Step 1</h2>
             <p class="sectionText">Make a new virtual machine, and go through the options.</p>
-            <p class="text">First name the machine, pick a compute resource and storage, pick compatibility (however I recommend leaving this as is).</p>
+
+            <p class="text">• First name the machine, pick a compute resource and storage, pick compatibility (however I recommend leaving this as is).</p>
             <img class="image" src="/img/instruksjon1.png" alt="Image showing how to name the VM">
-            <p class="text">Pick Linux and then Ubuntu 64 bit.</p>
+
+            <p class="text">• Pick Linux and then Ubuntu 64 bit.</p>
             <img class="image" src="/img/instruksjon2.png" alt="Image showing how to pick Linux for the VM">
             <img src="img/Instruksjon3.png" alt="Image showing how to pick Linux Ubuntu for the VM" class="image smallImage">
         </section>
@@ -39,30 +41,183 @@
             <h2>Step 2</h2>
             <p class="sectionText">Set up the hardware and launch the VM.</p>
 
-            <p class="text">Go to browse under dummy_temp_switch and select the internet you wish to use.</p>
+            <p class="text">• Go to browse under dummy_temp_switch and select the internet you wish to use.</p>
             <img src="img/instruksjon4.png" alt="Image showing how to pick browse in a dropdown menu" class="image">
 
-            <p class="text">Go under New Hard disk and change Thick Provision Lazy Zeroed to Thick Provision.</p>
+            <p class="text">• Go under New Hard disk and change Thick Provision Lazy Zeroed to Thick Provision.</p>
             <img src="img/Instruksjon5.png" alt="" class="image">
 
-            <p class="text">Go to new CD/DVD Drive and change Client Device to Content Library ISO File, then pick “ubuntu-20.04.3-live-server-amd64” (if this doesn’t exist pick any that have ubuntu live server in the name). Toggle “Connect at power on” on.</p>
+            <p class="text">• Go to new CD/DVD Drive and change Client Device to Content Library ISO File, then pick “ubuntu-20.04.3-live-server-amd64” (if this doesn’t exist pick any that have ubuntu live server in the name). Toggle “Connect at power on” on.</p>
             <img src="img/instruksjon6.png" alt="" class="image">
             <img src="img/Instruksjon7.png" alt="" class="image">
 
-            <p class="text">Switch to VM Options, go under Boot Options and allow the selected checkbox.</p>
+            <p class="text">• Switch to VM Options, go under Boot Options and allow the selected checkbox.</p>
             <img src="img/instruksjon8.png" alt="" class="image">
 
-            <p class="text">Confirm the options and press power on to start the VM, then press the Launch Console button and confirm using your desired console viewer.</p>
+            <p class="text">• Confirm the options and press power on to start the VM, then press the Launch Console button and confirm using your desired console viewer.</p>
             <img src="img/Instruksjon9.png" alt="" class="image">
             <img src="img/instruksjon10.png" alt="" class="image">
+            <img src="img/Instruksjon11.png" alt="" class="image">
         </section>
 
         <section class="stepSection" id="step3">
+            <h2>Step 3</h2>
+            <p class="sectionText">Run though the BIOS setup utility screen.</p>
 
+            <p class="text">• Navigate to the Boot menu and press enter on Network boot from VMware VMXNET3 once (there is no feedback on the click, so just press once and move on).</p>
+            <img src="img/instruksjon12.png" alt="" class="image">
+
+            <p class="text">• Now move to the Exit menu, press Save Changes, and confirm.</p>
+            <img src="img/Instruksjon13.png" alt="" class="image">
+
+            <p class="text">• After this, press f10 to exit the setup utility screen.</p>
+            <img src="img/instruksjon14.png" alt="" class="image">
+            <img src="" alt="">
+        </section>
+        
+        <section class="stepSection" id="step4">
+            <h2>Step 4</h2>
+            <p class="sectionText">Set up system settings for the server.</p>
+
+            <p class="text">• Select your desired keyboard language, and move on to this following screen. Pick Edit IPv4.</p>
+            <img src="img/Instruksjon15.png" alt="" class="image">
+
+            <p class="text">• Pick Manual.</p>
+            <img src="img/instruksjon16.png" alt="" class="image">
+
+            <p class="text">• And then fill out the IPv4 configuration.</p>
+            <img src="img/Instruksjon17.png" alt="" class="image">
+
+            <p class="text">• Save the configurations, and press continue until you get to the storage configuration screen. Press done again, and press continue.</p>
+            <img src="img/instruksjon18.png" alt="" class="image">
+
+            <p class="text">• After this, fill out the information illustrated in the image below, and press done.</p>
+            <img src="img/Instruksjon19.png" alt="" class="image">
+
+            <p class="text">• Now on the SSH setup, turn on Install OpenSSH server and press done once again.</p>
+            <img src="img/instruksjon20.png" alt="" class="image">
+
+            <p class="text">• Finally, you will see this screen, it will load for a while and it might take a few minutes, after it stops moving and the Reboot Now button appears, press it and viola, you’ve set up the system settings for the server. </p>
+            <img src="img/Instruksjon21.png" alt="" class="image">
+        </section>
+
+        <section class="stepSection" id="step5">
+            <h2>Step 5</h2>
+            <p class="sectionText">Set up Apache2 on the server.</p>
+
+            <p class="text">• Log in to the server.</p>
+            <img src="img/instruksjon22.png" alt="" class="image">
+
+            <p class="text">• Type the following for root access, so that you don’t need to type your password for permission to execute certain commands.</p>
+            <img src="img/instruksjon23.png" alt="" class="image">
+
+            <p class="text">• Now type this, it updates the packages that need to be updated.</p>
+            <img src="img/instruksjon24.png" alt="" class="image">
+
+            <p class="text">• The following installs Apache 2.</p>
+            <img src="img/instruksjon25.png" alt="" class="image">
+
+            <p class="text">• Check the version of Apache 2.</p>
+            <img src="img/instruksjon26.png" alt="" class="image">
+
+            <p class="text">• Open the app list.</p>
+            <img src="img/instruksjon27.png" alt="" class="image">
+
+            <p class="text">• We will be using the ‘Apache’ app, so type the following.</p>
+            <img src="img/instruksjon28.png" alt="" class="image">
+
+            <p class="text">• Check the ufw status, it should be inactive right now, which means Apache is allowed in the firewall.</p>
+            <img src="img/instruksjon29.png" alt="" class="image">
+
+            <p class="text">• Check with the below command if the server is up and running, if so you should be able to visit the pre made template page from Ubuntu.</p>
+            <img src="img/instruksjon30.png" alt="" class="image">
+
+            <p class="text">• To get its address, type this.</p>
+            <img src="img/instruksjon31.png" alt="" class="image">
+        </section>
+
+        <section class="stepSection" id="step6">
+            <h2>Step 6</h2>
+            <p class="sectionText">Set up your own template site.</p>
+
+            <p class="text">• Type the following to create the directory of your template (and later actual) site. Keep in mind that you should change the ‘apacheguide.net’ part to your own address. This is simply what I chose to go with.</p>
+            <img src="img/instruksjon32.png" alt="" class="image">
+
+            <p class="text">• Change ownership of the directory to the current user.</p>
+            <img src="img/instruksjon33.png" alt="" class="image">
+
+            <p class="text">• Assign the necessary permissions for you to edit files inside the template directory.</p>
+            <img src="img/instruksjon34.png" alt="" class="image">
+            
+            <p class="text">• Make the template html file and open it in the nano editor.</p>
+            <img src="img/instruksjon35.png" alt="" class="image">
+
+            <p class="text">• Type the html seen below, then input ctrl + O to save and then ctrl + X to exit the editor.</p>
+            <img src="img/instruksjon36.png" alt="" class="image">
+        </section>
+
+        <section class="stepSection" id="step7">
+            <h2>Step 7</h2>
+            <p class="sectionText">Set up a virtual host.</p>
+
+            <p class="text">• Type the following, it will set up a conf file inside the apache2 sites-available directory that was installed when you installed Apache.</p>
+            <img src="img/instruksjon37.png" alt="" class="image">
+
+            <p class="text">• Type the following (and make sure there are no spelling errors as that will stop the code from working, and it is a pain to go back and fix), then save and exit with ctrl + O and ctrl + X.</p>
+            <img src="img/instruksjon38.png" alt="" class="image">
+
+            <p class="text">• Enable your own virtual host file.</p>
+            <img src="img/instruksjon39.png" alt="" class="image">
+
+            <p class="text">• Disable the default virtual host file.</p>
+            <img src="img/instruksjon40.png" alt="" class="image">
+
+            <p class="text">• Restart apache2, this will set the website up so you can visit it on the url you got from the ‘hostname -I’ command earlier.</p>
+            <img src="img/instruksjon41.png" alt="" class="image">
+        </section>
+
+        <section class="stepSection" id="step8">
+            <h2>Step 8</h2>
+            <p class="sectionText">Upload your own website to the server using FileZilla.</p>
+
+            <p class="text">• Download FileZilla client from <a class="text" href="https://filezilla-project.org/" target="_blank">https://filezilla-project.org/.</a></p>
+            <img src="img/instruksjon42.png" alt="" class="image">
+
+            <p class="text">• Select the default FileZilla version.</p>
+            <img src="img/instruksjon43.png" alt="" class="image">
+
+            <p class="text">• Press the button in the top left, and then press new site in the window that popped up.</p>
+            <img src="img/instruksjon44.png" alt="" class="image">
+
+            <p class="text">• Name the site, then fill out the information to the right with your own server’s IP and your login, this essentially logs you in through. (FileZilla is set up in Norwegian in the images, however you should be able to find out what to do from this, in the worst case you could translate the words to English.)</p>
+            <img src="img/instruksjon45.png" alt="" class="image">
+
+            <p class="text">• Here it should show a warning that the machine you’re trying to connect to could be the wrong machine, press OK and continue, because as long as you entered the correct IP while connected to global protect, it should have connected to the correct server.</p>
+            <img src="img/instruksjon46.png" alt="" class="image">
+
+            <p class="text">• When you’ve connected successfully, go to the root directory and navigate to the template directory you set up earlier in the tutorial.</p>
+            <img src="img/instruksjon47.png" alt="" class="image">
+            <img src="img/instruksjon48.png" alt="" class="image">
+            <img src="img/instruksjon49.png" alt="" class="image">
+
+            <p class="text">• Navigate to the actual website you wish to upload to the server.</p>
+            <img src="img/instruksjon50.png" alt="" class="image">
+
+            <p class="text">• You now want to change the permission to make anyone able to write, this is represented by typing -R 777, the 777 is that all permissions are enabled for anyone, you will want to turn this back to 755 later to give only the user permissions.</p>
+            <img src="img/instruksjon51.png" alt="" class="image smallImage">
+
+            <p class="text">• Now use your newfound permissions to upload your files to the server by selecting all your wanted files, and then uploading them. This is now possible because you changed permissions to 777, again, remember to switch back to 755 on permissions.</p>
+            <img src="img/instruksjon52.png" alt="" class="image">
+
+            <p class="sectionText">Congrats! You have successfully set up your own website on the Apache Webserver. You can access it through the same IP you visited your template website with, you might also need to restart the webserver using ‘sudo systemctl restart apache2’.</p>
         </section>
     </main>
-    <footer>
-
+    <footer id="footer">
+        <p class="footerText">EMAIL: aksel4455@gmail.com</p>
+        <p class="footerText footerBuffer">|</p>
+        <p class="footerText">AUTHOR: Aksel Efraim Jacobsen</p>
+        <p class="footerText footerBuffer">|</p>
+        <p class="footerText">MADE AS: Project at Bleiker VGS</p>
     </footer>
 </body>
 </html>
