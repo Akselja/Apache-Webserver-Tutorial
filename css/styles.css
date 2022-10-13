@@ -1,15 +1,15 @@
 /*adds fonts*/
 @font-face {
     font-family: "Maitree";
-    src: url(/fonts/Maitree-ExtraLight.ttf);
+    src: url(fonts/Maitree-ExtraLight.ttf);
 }
 @font-face {
     font-family: "Maitree-bold";
-    src: url(/fonts/Maitree-Medium.ttf);
+    src: url(fonts/Maitree-Medium.ttf);
 }
 @font-face {
     font-family: "Sanchez";
-    src: url(/fonts/Sanchez-Italic.ttf);
+    src: url(fonts/Sanchez-Italic.ttf);
 }
 
 /*Basic styles*/
