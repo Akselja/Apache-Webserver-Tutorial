@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Own links-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+
+    <title>Apache Webserver Tutorial</title>
+</head>
+<body>
+    <header id="navbar">
+        <a id="navbarLogo" href="">Apache Tutorial</a>
+        <p class="navbarLink">|</p>
+        <a class="navbarLink" href="">Jump</a>
+    </header>
+    <main id="mainPart">
+        <div id="mainTop">
+            <h1>Apache Webserver Tutorial</h1>
+            <p class="sectionText">In this guide I will go through how to set up an Apache 2 webserver using Ubuntu on VMware vSphere.</p>
+            <p class="sectionText">Before starting, you should have logged into Global Protect, then logged into vSphere and then started the setup of a new VM.</p>
+        </div>
+
+        <section class="stepSection" id="step1">
+            <h2>Step 1</h2>
+            <p class="sectionText">Make a new virtual machine, and go through the options.</p>
+            <p class="text">First name the machine, pick a compute resource and storage, pick compatibility (however I recommend leaving this as is).</p>
+            <img class="image" src="/img/instruksjon1.png" alt="Image showing how to name the VM">
+            <p class="text">Pick Linux and then Ubuntu 64 bit.</p>
+            <img class="image" src="/img/instruksjon2.png" alt="Image showing how to pick Linux for the VM">
+            <img src="img/Instruksjon3.png" alt="Image showing how to pick Linux Ubuntu for the VM" class="image smallImage">
+        </section>
+
+        <section class="stepSection" id="step2">
+            <h2>Step 2</h2>
+            <p class="sectionText">Set up the hardware and launch the VM.</p>
+            <p class="text">Go to browse under dummy_temp_switch and select the internet you wish to use.</p>
+            <img src="img/instruksjon4.png" alt="Image showing how to pick browse in a dropdown menu" class="image">
+            <p class="text">Go under New Hard disk and change Thick Provision Lazy Zeroed to Thick Provision.</p>
+            <img src="img/Instruksjon5.png" alt="" class="image">
+            <p class="text">Go to new CD/DVD Drive and change Client Device to Content Library ISO File, then pick “ubuntu-20.04.3-live-server-amd64” (if this doesn’t exist pick any that have ubuntu live server in the name). Toggle “Connect at power on” on.</p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

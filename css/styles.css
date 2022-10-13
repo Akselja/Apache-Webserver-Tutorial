@@ -1,0 +1,140 @@
+/*adds fonts*/
+@font-face {
+    font-family: "Maitree";
+    src: url(/fonts/Maitree-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Maitree-bold";
+    src: url(/fonts/Maitree-Medium.ttf);
+}
+@font-face {
+    font-family: "Sanchez";
+    src: url(/fonts/Sanchez-Italic.ttf);
+}
+
+/*Basic styles*/
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h1, h2 {
+    font-family: "Sanchez";
+}
+p, a {
+    font-size: 1.5rem;
+    font-family: "Maitree";
+}
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p, a {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/*Navbar styles*/
+#navbar {
+    display: flex;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: solid #218f97;
+}
+#navbarLogo {
+    text-decoration: none;
+    color: black;
+    font-family: "Sanchez";
+    font-size: 2rem;
+}
+.navbarLink {
+    text-decoration: none;
+    color: #313335;
+    font-family: "Sanchez";
+    font-size: 1.7rem;
+    margin: 0 0 0 1.5rem;
+}
+@media screen and (max-width: 770px) {
+    #navbarLogo {
+        font-size: 1.7rem;
+    }
+    .navbarLink {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    #navbar {
+        justify-content: center;
+        margin: 0;
+    }
+    #navbarLogo {
+        font-size: 1.2rem;
+    }
+    .navbarLink {
+        font-size: 1.2rem;
+        margin: 0 0 0 1rem;
+    }
+}
+
+/*Main styles*/
+#mainPart {
+    margin: 130px 1.5rem;
+    padding: 0 1.5rem;
+}
+#mainTop {
+    margin: 0 0 6rem 0;
+}
+.text {
+    margin: 1rem 0;
+    font-weight: bold;
+    padding-right: 30vw;
+}
+.sectionText {
+    margin: 1rem 0;
+    font-family: "Maitree-bold";
+}
+.image {
+    box-shadow: 11px 11px #da6b3d, -11px -11px #da6b3d;
+    margin: 3rem 0;
+    display: block;
+}
+@media screen and (max-width: 1240px) {
+    .image {
+        width: 80vw;
+        height: auto;
+        box-shadow: 8px 8px #da6b3d, -8px -8px #da6b3d;
+    }
+    .smallImage {
+        width: auto;
+    }
+    .text {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 630px) {
+    .smallImage {
+        width: 80vw;
+    }
+}
+/*Step Sections*/
+.stepSection {
+    padding: 1rem 0;
+}
