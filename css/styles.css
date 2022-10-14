@@ -61,9 +61,9 @@ p, a {
 }
 #navbarLogo {
     text-decoration: none;
-    color: black;
     font-family: "Sanchez";
     font-size: 2rem;
+    white-space: nowrap;
 }
 .navbarLink {
     text-decoration: none;
@@ -71,6 +71,7 @@ p, a {
     font-family: "Sanchez";
     font-size: 1.7rem;
     margin: 0 0 0 1.5rem;
+    white-space: nowrap;
 }
 @media screen and (max-width: 770px) {
     #navbarLogo {
@@ -80,16 +81,25 @@ p, a {
         font-size: 1.4rem;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 560px) {
     #navbar {
         justify-content: center;
         margin: 0;
     }
     #navbarLogo {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .navbarLink {
         font-size: 1.2rem;
+        margin: 0 0 0 1rem;
+    }
+}
+@media screen and (max-width: 410px) {
+    #navbarLogo {
+        font-size: 1rem;
+    }
+    .navbarLink {
+        font-size: .9rem;
         margin: 0 0 0 1rem;
     }
 }
@@ -168,4 +178,23 @@ p, a {
     .footerText {
         font-size: 1rem;
     }
+}
+
+/*Dark mode*/
+.darkmodeButton:hover {
+    cursor: pointer;
+}
+.darkmodeText {
+    color: white;
+}
+.darkmodeNavbar {
+    background-color: black !important;
+}
+.darkmodeBackground {
+    background-color: #313335;
+}
+
+/*Jump styles*/
+.jumpButton:hover {
+    cursor: pointer;
 }
