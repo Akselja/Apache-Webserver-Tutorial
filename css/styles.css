@@ -187,11 +187,8 @@ p, a {
 .darkmodeText {
     color: white;
 }
-.darkmodeNavbar {
-    background-color: black !important;
-}
 .darkmodeBackground {
-    background-color: #313335;
+    background-color: #313335 !important;
 }
 
 /*Jump styles*/

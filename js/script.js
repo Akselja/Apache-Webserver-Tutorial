@@ -11,7 +11,7 @@ darkMode.addEventListener("click", () => {
     } else if (darkMode.textContent === "Light Mode") {
         darkMode.textContent = "Dark Mode";
     }
-    navbar.classList.toggle("darkmodeNavbar");
+    navbar.classList.toggle("darkmodeBackground");
     body.classList.toggle("darkmodeBackground");
     textTarget.forEach(e => e.classList.toggle("darkmodeText"));
 });
