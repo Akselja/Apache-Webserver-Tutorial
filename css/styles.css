@@ -192,6 +192,26 @@ p, a {
 }
 
 /*Jump styles*/
+#jumpDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    background: white;
+    border-left: solid #218f97;
+    border-right: solid #218f97;
+    border-bottom: solid #218f97;
+    top: 67px;
+    left: 312px;
+    width: 117px;
+}
+.hide {
+    display: none !important;
+}
+.jumpLink {
+    padding: 4px auto;
+    margin: 5px 0;
+}
 .jumpButton:hover {
     cursor: pointer;
 }

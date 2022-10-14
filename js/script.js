@@ -15,3 +15,4 @@ darkMode.addEventListener("click", () => {
     body.classList.toggle("darkmodeBackground");
     textTarget.forEach(e => e.classList.toggle("darkmodeText"));
 });
+
