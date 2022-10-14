@@ -25,7 +25,9 @@
 
 </head>
 <body>
+    <!--Navbar section-->
     <header aria-hidden="true">
+        <!--Navbar-->
         <div id="navbar">
             <p id="navbarLogo" href="">Apache Tutorial</p>
             <p class="navbarLink">|</p>
@@ -33,6 +35,7 @@
             <p class="navbarLink">|</p>
             <p class="navbarLink darkmodeButton">Dark Mode</p>
         </div>
+        <!--Jump Dropdown menu-->
         <div class="hide" id="jumpDiv">
             <a href="#step1" class="navbarLink jumpLink">Step 1</a>
             <a href="#step2" class="navbarLink jumpLink">Step 2</a>
@@ -44,13 +47,18 @@
             <a href="#step8" class="navbarLink jumpLink">Step 8</a>
         </div>
     </header>
+
+
+
     <main id="mainPart">
+        <!--Top section-->
         <div id="mainTop">
             <h1>Apache Webserver Tutorial</h1>
             <p class="sectionText">In this guide I will go through how to set up an Apache 2 webserver using Ubuntu on VMware vSphere.</p>
             <p class="sectionText">Before starting, you should have logged into Global Protect, then logged into vSphere and then started the setup of a new VM.</p>
         </div>
 
+        <!--Step 1 section-->
         <section class="stepSection" id="step1">
             <h2>Step 1</h2>
             <p class="sectionText">Make a new virtual machine, and go through the options.</p>
@@ -63,6 +71,7 @@
             <img src="img/Instruksjon3.png" alt="Image showing how to pick Linux Ubuntu for the VM" class="image smallImage">
         </section>
 
+        <!--Step 2 section-->
         <section class="stepSection" id="step2">
             <h2>Step 2</h2>
             <p class="sectionText">Set up the hardware and launch the VM.</p>
@@ -86,6 +95,7 @@
             <img src="img/Instruksjon11.png" alt="" class="image">
         </section>
 
+        <!--Step 3 section-->
         <section class="stepSection" id="step3">
             <h2>Step 3</h2>
             <p class="sectionText">Run though the BIOS setup utility screen.</p>
@@ -101,6 +111,7 @@
             <img src="" alt="">
         </section>
         
+        <!--Step 4 section-->
         <section class="stepSection" id="step4">
             <h2>Step 4</h2>
             <p class="sectionText">Set up system settings for the server.</p>
@@ -127,6 +138,7 @@
             <img src="img/Instruksjon21.png" alt="" class="image">
         </section>
 
+        <!--Step 5 section-->
         <section class="stepSection" id="step5">
             <h2>Step 5</h2>
             <p class="sectionText">Set up Apache2 on the server.</p>
@@ -162,6 +174,7 @@
             <img src="img/instruksjon31.png" alt="" class="image">
         </section>
 
+        <!--Step 6 section-->
         <section class="stepSection" id="step6">
             <h2>Step 6</h2>
             <p class="sectionText">Set up your own template site.</p>
@@ -182,6 +195,7 @@
             <img src="img/instruksjon36.png" alt="" class="image">
         </section>
 
+        <!--Step 7 section-->
         <section class="stepSection" id="step7">
             <h2>Step 7</h2>
             <p class="sectionText">Set up a virtual host.</p>
@@ -202,6 +216,7 @@
             <img src="img/instruksjon41.png" alt="" class="image">
         </section>
 
+        <!--Step 8 section-->
         <section class="stepSection" id="step8">
             <h2>Step 8</h2>
             <p class="sectionText">Upload your own website to the server using FileZilla.</p>
@@ -238,6 +253,10 @@
             <p class="sectionText">Congrats! You have successfully set up your own website on the Apache Webserver. You can access it through the same IP you visited your template website with, you might also need to restart the webserver using ‘sudo systemctl restart apache2’.</p>
         </section>
     </main>
+
+
+
+    <!--Footer-->
     <footer id="footer">
         <p class="footerText">EMAIL: aksel4455@gmail.com</p>
         <p class="footerText footerBuffer">|</p>
