@@ -83,11 +83,16 @@ p, a {
     .navbarLink {
         font-size: 1.4rem;
     }
+    #jumpDiv {
+        top: 62.2px !important;
+        left: 274px !important;
+        width: 105px !important;
+    }
 }
 @media screen and (max-width: 560px) {
     #navbar {
-        justify-content: center;
         margin: 0;
+        padding: 1rem 2rem;
     }
     #navbarLogo {
         font-size: 1.3rem;
@@ -96,14 +101,23 @@ p, a {
         font-size: 1.2rem;
         margin: 0 0 0 1rem;
     }
+    #jumpDiv {
+        top: 55.8px !important;
+        left: 209px !important;
+        width: 80.88px !important;
+    }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 440px) {
     #navbarLogo {
         font-size: 1rem;
     }
     .navbarLink {
         font-size: .9rem;
-        margin: 0 0 0 1rem;
+    }
+    #jumpDiv {
+        top: 51.2px !important;
+        left: 171px !important;
+        width: 66.66px !important;
     }
 }
 
@@ -194,6 +208,7 @@ p, a {
     background-color: #313335 !important;
 }
 
+
 /*Jump styles*/
 #jumpDiv {
     display: flex;
@@ -214,6 +229,9 @@ p, a {
 .jumpLink {
     padding: 4px auto;
     margin: 5px 0;
+}
+.jumpLink:hover {
+    background-color: #9a9fa5;
 }
 .jumpButton:hover {
     cursor: pointer;
