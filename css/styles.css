@@ -61,6 +61,7 @@ p, a {
     right: 0;
     background-color: white;
     border-bottom: solid #218f97;
+    z-index: 2;
 }
 #navbarLogo {
     text-decoration: none;
@@ -202,6 +203,10 @@ p, a {
 }
 
 /*Dark mode*/
+.darkmodeButton {
+    color: #218f97 !important;
+    text-decoration: underline;
+}
 .darkmodeButton:hover {
     cursor: pointer;
 }
@@ -226,6 +231,7 @@ p, a {
     top: 67px;
     left: 312px;
     width: 117px;
+    z-index: 1;
 }
 .hide {
     display: none !important;
@@ -237,6 +243,30 @@ p, a {
 .jumpLink:hover {
     background-color: #9a9fa5;
 }
+.jumpButton {
+    color: #218f97 !important;
+    text-decoration: underline;
+}
 .jumpButton:hover {
     cursor: pointer;
+}
+
+/*Dropdown Animation*/
+.slideDown {
+    animation: .35s ease-out 0s 1 normal running slidedown;
+}
+@keyframes slidedown {
+    0% {
+        transform: translateY(-400px);
+    }
+
+}
+
+.slideUp {
+    animation: .35s ease-in 0s 1 normal running slideup;
+}
+@keyframes slideup {
+    100% {
+        transform: translateY(-400px);
+    }
 }
