@@ -72,6 +72,9 @@ p, a {
     font-size: 1.7rem;
     margin: 0 0 0 1.5rem;
     white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 @media screen and (max-width: 770px) {
     #navbarLogo {

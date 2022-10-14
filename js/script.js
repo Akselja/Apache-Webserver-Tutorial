@@ -16,3 +16,11 @@ darkMode.addEventListener("click", () => {
     textTarget.forEach(e => e.classList.toggle("darkmodeText"));
 });
 
+//Jump dropdown section
+const jumpButton = document.querySelector(".jumpButton");
+const dropdown = document.querySelector("#jumpDiv");
+
+jumpButton.addEventListener("click", e => {
+    dropdown.classList.toggle("hide");
+});
+
